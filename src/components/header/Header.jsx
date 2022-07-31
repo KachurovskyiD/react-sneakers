@@ -15,7 +15,7 @@ const Header = ({ onClickCart }) => {
         <header className="header">
             <div className="container">
                 <div className="header__wrapper">
-                    <Link className="header__logo" to="/" >
+                    <Link className="header__logo" to="react-sneakers" >
                         <img className="header__logo-icon" src={logo} alt="Logo" />
                         <div className="header__inner">
                             <h2>React Sneakers</h2>
@@ -30,7 +30,7 @@ const Header = ({ onClickCart }) => {
                             </span>
                         </li>
                         <li className="header__actions-item">
-                            <Link to="/favourites">
+                            <Link to="favourites">
                                 <img className="header__actions-icon" src={favourite} alt="Favourite" />
                             </Link>
                         </li>

@@ -105,7 +105,7 @@ function App() {
           <main className="main">
             <Routes>
               <Route
-                path="/"
+                path="react-sneakers"
                 element={
                   <>
                     <Slider />
@@ -119,7 +119,7 @@ function App() {
                       isLoading={isLoading} /></>
                 } />
               <Route
-                path="/favourites"
+                path="favourites"
                 element={
                   <Favourites
                     onAddToCart={onAddToCart}

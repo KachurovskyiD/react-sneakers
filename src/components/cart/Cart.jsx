@@ -10,7 +10,7 @@ import empty from '../../assets/img/empty.png';
 const Cart = ({ show, onCloseCart, items = [], onRemoveFromCart }) => {
     const duration = 300;
     const { totalPrice } = useCart()
-    console.log(items);
+
     return (
         <CSSTransition
             in={show}
