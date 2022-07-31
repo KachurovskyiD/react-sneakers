@@ -38,7 +38,7 @@ const Favourites = ({ onAddToCart, }) => {
                             <img src={emptyFace} alt="Empty" />
                             <h2>Закладок немає</h2>
                             <p>Ви нічого не додали...</p>
-                            <Link to="react-sneakers" className="button">Повернутися на головну</Link >
+                            <Link to="" className="button">Повернутися на головну</Link >
                         </div>
                     }
                 </div>
