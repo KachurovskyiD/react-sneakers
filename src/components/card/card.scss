@@ -1,0 +1,61 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.card {
+    position: relative !important;
+    padding: 20px 28px 34px !important;
+    max-width: 210px !important;
+    border: 1px solid #F3F3F3 !important;
+    border-radius: 40px !important;
+    transition: transform .3s !important;
+
+    &:hover {
+        box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.05);
+        transform: translateY(-5px);
+    }
+
+    &__favourite {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    &__img {
+        width: 133px;
+        max-width: 100%;
+        min-height: 112px;
+        margin-bottom: 14px;
+        background-size: cover;
+    }
+
+    &__title {
+        margin-bottom: 14px;
+        min-height: 34px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__price {
+        span {
+            font-size: 11px;
+            font-weight: 500;
+            color: $greyColor;
+            text-transform: uppercase;
+        }
+
+        p {
+            margin-top: 3px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+
+    &__add-btn {
+        cursor: pointer;
+    }
+}

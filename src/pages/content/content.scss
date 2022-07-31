@@ -1,0 +1,65 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.content {
+    padding: 45px 0;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 45px;
+
+        @include tablet {
+            flex-direction: row;
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        text-align: center;
+        max-width: 240px;
+        overflow: hidden;
+
+        @include tablet {
+            text-align: left;
+            max-width: 325px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__search {
+        align-self: start;
+        position: relative;
+    }
+
+    &__search-icon {
+        position: absolute;
+        top: 50%;
+        left: 18px;
+        transform: translateY(-50%);
+    }
+
+    &__search-input {
+        border: 1px solid #EAEAEA;
+        border-radius: 10px;
+        padding: 15px 15px 15px 46px;
+        color: $greyColor;
+
+        &::placeholder {
+            color: #C4C4C4;
+        }
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 210px);
+        gap: 25px;
+        justify-content: center;
+
+        @include tablet {
+            gap: 52px 40px;
+        }
+    }
+}
